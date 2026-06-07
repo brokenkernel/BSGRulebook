@@ -402,7 +402,7 @@ $(function () {
     $(".nopreconfigured").show();
 
   }
-  $('#configform').change(flipSwitches);
+  $('#configform').on("change", flipSwitches);
   flipSwitches();
 });
 
