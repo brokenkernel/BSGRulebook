@@ -282,7 +282,7 @@ function flipSwitches() {
     // Step 4: Hide all the classes that need hiding. Since we do this
     // last, that means a given tag needs *all* elements to be visible,
     // or in other words, each list of tags is ANDed together.
-    for (let _i in hideThese) {
+    for (let i in hideThese) {
         $('.' + hideThese[i]).hide();
     }
 
