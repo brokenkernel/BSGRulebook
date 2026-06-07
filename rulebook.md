@@ -289,7 +289,7 @@ function flipSwitches () {
   
   // Step 5: Fix the rowspan on the basestar attack table. It has to
   // change based on the options set.
-  var rowspan = 3;
+  let rowspan = 3;
   if (readCheckbox('#daybreak')) {
     // Additional one for assault raptors
     rowspan++;

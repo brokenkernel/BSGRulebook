@@ -1,6 +1,7 @@
 // https://github.com/ghiculescu/jekyll-table-of-contents
 (function ($) {
     $.fn.toc = function (options) {
+        let level, html;
         const defaults = {
                 noBackToTopLinks: false,
                 title: '<i>Jump to...</i>',
@@ -58,8 +59,7 @@
         }).get().sort()[0];
         const return_to_top = '<i class="icon-arrow-up back-to-top"> </i>';
 
-        var level = get_level(headers[0]),
-            this_level,
+        level = get_level(headers[0]),
             html = settings.title + " <" + settings.listType + ">";
         headers.on('click', function () {
             if (!settings.noBackToTopLinks) {
@@ -68,7 +68,7 @@
         })
             .addClass('clickable-header')
             .each(function (_, header) {
-                this_level = get_level(header);
+                let this_level = get_level(header);
                 if (!settings.noBackToTopLinks && this_level === highest_level) {
                     $(header).addClass('top-level-header').after(return_to_top);
                 }
