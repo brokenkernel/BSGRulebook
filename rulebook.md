@@ -440,6 +440,8 @@ $(function () {
     <label><input type="checkbox" name="help" id="help"> Show help</label><br>
     <label><input type="checkbox" name="highlight" id="highlight"> Highlight modified rules</label><br>
     <hr>
+    <label><input type="number" name="nplayers" min="3" max="7"> Number of Players (TODO)</label><br>
+    <hr>
     <label>Share this configuration: 
       <input style="width: 100%;" type="text" id="generatedUrl" name="generatedUrl" />
     </label>
