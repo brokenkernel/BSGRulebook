@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "find-unused-sass-variables": "^6.2.1"
+  }
+}
