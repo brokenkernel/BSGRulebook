@@ -59,8 +59,8 @@
         }).get().sort()[0];
         const return_to_top = '<i class="icon-arrow-up back-to-top"> </i>';
 
-        level = get_level(headers[0]),
-            html = settings.title + " <" + settings.listType + ">";
+        level = get_level(headers[0]);
+        html = settings.title + " <" + settings.listType + ">";
         headers.on('click', function () {
             if (!settings.noBackToTopLinks) {
                 window.location.hash = this.id;
